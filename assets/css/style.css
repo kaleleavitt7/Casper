@@ -4,11 +4,7 @@
 body{
 	background-color: #f9f8f7;
 }
-header {
-  position: relative;
-  height: calc(190px * 4);
-  overflow: hidden;
-}
+
 
 .container-fluid{
 	max-width: 1280px;
