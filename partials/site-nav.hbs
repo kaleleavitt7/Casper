@@ -1,32 +1,156 @@
-<nav class="site-nav">
-    <div class="site-nav-left">
-        {{#if @site.logo}}
-            <a class="site-nav-logo" href="{{@site.url}}"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
-        {{else}}
-            <a class="site-nav-logo" href="{{@site.url}}">{{@site.title}}</a>
-        {{/if}}
-        <div class="site-nav-content">
-            {{#if @site.navigation}}
-                {{navigation}}
-            {{/if}}
-            {{#is "post"}}
-                <span class="nav-post-title {{#unless @site.logo}}dash{{/unless}}">{{post.title}}</span>
-            {{/is}}
-        </div>
+<script>
+		$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".top-bar");
+    $nav.toggleClass('scrolled-tb', $(this).scrollTop() > 40);
+  });
+});
+
+		$(function () {
+  $(document).scroll(function () {
+    var $nav = $(".fixed-top");
+    $nav.toggleClass('scrolled', $(this).scrollTop() > 40);
+  });
+});
+
+
+
+$(window).scroll(function() {
+if ($(".navbar").offset().top > 77) {
+    $('#custom-nav').addClass('affix');
+    $(".navbar-fixed-top").addClass("top-nav-collapse");
+    $('.navbar-brand img').attr('src','images/ESS-Logo-Original-Large.png'); //change src
+} else {
+    $('#custom-nav').removeClass('affix');
+    $(".navbar-fixed-top").removeClass("top-nav-collapse");
+    $('.navbar-brand img').attr('src','images/easy-storage-white.png')
+}   
+});
+</script>
+	<div class="container-fluid-fluid bg-white sticky-top top-bar ">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-12">
+				<p  class="d-block px-3 py-2 text-center text-md-right text-bold m-bottom0 nav-text">Support - <a href="#" class="nav-text">(435) 656-1990</a> | <a href="#"  class="nav-text">E-mail Us</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<header>
+		  <nav class="navbar navbar-expand-lg  fixed-top py-3" id="mainNav">
+			 
+    <div class="container-fluid">
+	    <div class="d-flex">
+     <a class="navbar-brand" href="#"><img alt="" class="d-inline-block align-top logo"  src="images/easy-storage-white.png"></a> 
+	    </div>
+     <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right" data-target="#navbarNavDropdown" data-toggle="collapse" type="button">
+     <span class="navbar-toggler-icon"></span>
+     </button>
+				<div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+					<ul class="navbar-nav nav-pills">
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Management Software</a>
+						</li>
+						<li class="nav-item dropdown">
+							<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink" role="button">Additional Services</a>
+							<div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu services">
+								<div class="row no-gutters">
+									<div class="col-md-12 col-lg-6 col-sm-12">
+								<a class="dropdown-item" href="#">
+									<div class="row">
+									<div class="col-2">
+										<img height="45" class="mx-auto" alt="management software" src="images/SEO.png"/>
+									</div>
+									<div class="col-10">
+									<p class="submenu-h">SEO & Online Marketing</p>
+									<p class="submenu">Increase traffic and rank your website</p>
+									</div>
+									</div>
+								</a>
+									</div>
+									<div class="col-md-12 col-lg-6 col-sm-12">
+								<a class="dropdown-item" href="#">
+									<div class="row">
+									<div class="col-2">
+										<img height="45" class="mx-auto" alt="management software" src="images/tenant-protection.png"/>
+									</div>
+									<div class="col-10">
+									<p class="submenu-h">Tenant Protection</p>
+									<p class="submenu">Offer easy to use and affordable protection</p>
+									</div>
+									</div>
+								
+								</a> 
+								
+									</div>
+									
+									<div class="col-md-12 col-lg-6 col-sm-12">
+								<a class="dropdown-item" href="#">
+									<div class="row ">
+									<div class="col-2">
+										<img height="45" class="mx-auto" alt="management software" src="images/taxes.png"/>
+									</div>
+									<div class="col-10">
+									<p class="submenu-h">Accounting, Tax, & Consulting</p>
+									<p class="submenu">Day-to-day bookkeeping, annual tax returns</p>
+									</div>
+									</div>
+									
+									
+									
+								</a>
+									</div>
+									
+									<div class="col-md-12 col-lg-6 col-sm-12">
+								<a class="dropdown-item" href="#">
+									<div class="row">
+									<div class="col-2">
+										<img height="45" class="mx-auto" alt="management software" src="images/Cloud-Access.png"/>
+									</div>
+									<div class="col-10">
+									<p class="submenu-h">Cloud Access Control</p>
+									<p class="submenu">Manage access to your facility from anywhere</p>
+									</div>
+									</div>
+									
+									
+									
+								</a>
+								</div>
+									
+									<div class="col-md-12 col-lg-6">
+								<a class="dropdown-item" href="#">
+									<div class="row no-gutters">
+									<div class="col-2">
+										<img height="45" class="mx-auto" alt="management software" src="images/Call-Center.png"/>
+									</div>
+									<div class="col-10">
+									<p class="submenu-h">Call Answering & Remote Management</p>
+									<p class="submenu">Never miss a call again</p>
+									</div>
+									</div>
+									
+								</a>
+								</div>
+								</div>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdownMenuLink" role="button">About</a>
+							<div aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">
+								<a class="dropdown-item" href="#">Action</a> <a class="dropdown-item" href="#">Another action</a> <a class="dropdown-item" href="#">Something else here</a>
+							</div>
+						</li>
+						<li class="nav-item active">
+							<a class="nav-link" href="#">Contact</a>
+						</li>
+					</ul>
+					<form class="form-inline">
+						<button class="btn btn-outline-success" type="button">Free Demo</button>
+					</form>      
+				</div>
+					 
     </div>
-    <div class="site-nav-right">
-        <div class="social-links">
-            {{#if @site.facebook}}
-                <a class="social-link social-link-fb" href="{{facebook_url @site.facebook}}" title="Facebook" target="_blank" rel="noopener">{{> "icons/facebook"}}</a>
-            {{/if}}
-            {{#if @site.twitter}}
-                <a class="social-link social-link-tw" href="{{twitter_url @site.twitter}}" title="Twitter" target="_blank" rel="noopener">{{> "icons/twitter"}}</a>
-            {{/if}}
-        </div>
-        {{#if @labs.members}}
-            <a class="subscribe-button" href="#subscribe">Subscribe</a>
-        {{else}}
-            <a class="rss-button" href="https://feedly.com/i/subscription/feed/{{@site.url}}/rss/" title="RSS" target="_blank" rel="noopener">{{> "icons/rss"}}</a>
-        {{/if}}
-    </div>
-</nav>
+    
+  </nav>
+  </header>
