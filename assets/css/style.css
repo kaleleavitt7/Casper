@@ -26,11 +26,31 @@
 	background-image: linear-gradient(#006cb3, #2B99E3);
 }
 
+.site-home-header .site-header-content {
+    padding: 10vw 3vw 6vw;
+}
+
 .home-template .site-nav-main{
 	z-index: 9999;
 }
 @media only screen and (max-width: 445px) {
  .logo{height: 60px;}
+ .site-home-header .site-header-content {
+    padding: 20vw 3vw 6vw;
+}
+}
+
+@media (max-width: 500px)
+.post-full-header {
+    padding: 100px 0 35px;
+}
+
+.post-full-header {
+    position: relative;
+    margin: 0 auto;
+    padding: 120px 170px 50px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 .post-template{
