@@ -69,38 +69,12 @@
 }
 
 .post-template .fixed-top{
-  background-color: #fff !important;
+  background-color: #006cb3 !important;
   transition: background-color 200ms linear;
   
   
 }
-.post-template .scrolled-tb{
-	background: #006cb3 !important;
-	
-}
 
-.post-template .scrolled-tb .nav-text{
-	color: #fff;
-	
-}
-
- .post-template .fixed-top .nav-link{
-	color: #006cb3;
-}
-
- .post-template.fixed-top .nav-link:hover{
-	color: #E5E5E5;
-}
-
-.post-template .fixed-top .form-inline button {
-  background-color: #f08e1f !important;
-  transition: background-color 200ms linear;
-  
-}
-.post-template .fixed-top .form-inline button:hover{
-	background-color: #D67F1C !important;
-	color: #fff;
-}
 
 
 
