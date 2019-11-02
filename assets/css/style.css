@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|Roboto:300,400&display=swap');
 /* Nav and Header */
 
+.container-fluid{
+	max-width: 1280px;
+}
 
 .m-bottom0{
 	margin-bottom: 0px;
