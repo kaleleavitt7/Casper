@@ -17,13 +17,16 @@
 
 .nav-text{
 	font-family: "Montserrat", san-serif;
-	font-size: .9em;
+	font-size: 1.3em;
 	color:#006cb3 ;
+}
+.nav-text a{
+	font-size: 1.1em;
 }
 .navbar{
 	
 	border-width: 80%;
-	margin-top: 37px;
+	margin-top: 27px;
 }
 .navbar .btn{
 	margin-left: 5px;
@@ -31,7 +34,7 @@
 .nav-link{
 	color: #fff;
 	font-family: "Montserrat", san-serif;
-	font-size: .9em;
+	font-size: 1.5em;
 }
 .nav-link:hover{
 	color: #E5E5E5;
@@ -103,7 +106,7 @@
 	padding: 0;
 	margin-bottom: 0;
 	font-weight: 800;
-	
+	font-size: 1.4em;
 	width: 349px;
 }
 
@@ -162,6 +165,7 @@
 	border: 1px solid #fff;
 	font-family: "Montserrat", san-serif;
 	color: #fff;
+	font-size: 1.5em;
 }
 
 .btn-outline-success:hover{
@@ -173,7 +177,7 @@
 .btn-primary{
 	font-family: "Montserrat", san-serif;
 	
-	font-size: 1.4em;
+	font-size: 1.6em;
 	background-color: #f08e1f;
 	color: #fff;
 	border: 1px solid #f08e1f;
